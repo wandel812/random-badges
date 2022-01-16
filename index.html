@@ -1,0 +1,36 @@
+!
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>wheel</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wheel-wrapper">
+        <div class="wheel" id="roulette"></div>
+        <div class="mark"></div>
+    </div>
+    <div class="wheel-control">
+        <div class="wheel-control-item">
+            <input type="radio" id="gold" name="wheel-radio" value="gold" checked><label for="gold"> Gold </label>
+        </div>
+        <div class="wheel-control-item">
+            <input type="radio" id="black" name="wheel-radio" value="black"><label for="black"> Black </label>
+        </div>
+        <div class="wheel-control-item">
+            <input type="radio" id="dice" name="wheel-radio" value="dice"><label for="dice"> Dice </label>
+        </div>
+        <button class="button" id="roll">Roll</button>
+        <button class="button" id="reset">Reset</button>
+    </div>
+
+    <script src="script.js" async defer></script>
+</body>
+
+</html>

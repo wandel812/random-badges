@@ -1,0 +1,58 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.wheel-wrapper {
+    position: relative;
+    height: 200px;
+}
+
+.wheel {
+    --end-pos: 0;
+    height: 100%;
+    background-image: url(assets/coins.png);
+    background-repeat: repeat-x;
+    background-size: auto 100px;
+    background-position: 0 center;
+}
+
+.animate {
+    animation: speen 5s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes speen {
+    0% {
+        background-position: 0 center;
+    }
+
+    100% {
+        background-position: calc(var(--end-pos) * 1px) center;
+    }
+}
+
+.mark {
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    left: 50%;  
+    width: 5px;
+    background-color: red;
+}
+
+.wheel-control {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 15px;
+}
+
+.button {
+    max-width: 100px;
+    min-width: 70px;
+}
+

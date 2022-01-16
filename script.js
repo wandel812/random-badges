@@ -1,6 +1,6 @@
 const IMG_WIDTH = 3000;
 const BADGE_STEP = 100;
-const DICE_BADGE_POS = 775;
+const DICE_BADGE_POS = 650;
 
 
 function handleSubmit(event) {
